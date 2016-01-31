@@ -168,6 +168,10 @@ Synopsis
     ngx.say("AES 128 CBC (WITH IV) Encrypted HEX: ", str.to_hex(encrypted))
     ngx.say("AES 128 CBC (WITH IV) Decrypted: ",
         aes_128_cbc_with_iv:decrypt(encrypted))
+        
+    --- add base64
+    local bs = require "base64"
+    ngx.say(bs.to_base64("aaa"))   ---- YWFh
 ```
 
 [Back to TOC](#table-of-contents)
