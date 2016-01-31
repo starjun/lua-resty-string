@@ -172,6 +172,8 @@ Synopsis
     --- add base64
     local bs = require "base64"
     ngx.say(bs.to_base64("aaa"))   ---- YWFh
+    local bs_frombs64 = bs.from_base64("YWFh")  ---- aaa
+    ngx.say(bs_frombs64)
 ```
 
 [Back to TOC](#table-of-contents)
